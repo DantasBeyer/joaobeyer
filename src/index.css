@@ -14,3 +14,7 @@
         @apply cursor-pointer;
     }
 }
+
+.menuMobile{
+    @apply py-6 text-4xl
+}
