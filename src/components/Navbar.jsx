@@ -1,11 +1,14 @@
 import React, {useState} from 'react'
 import Logo from '../assets/react.png'
-import {FaBars, FaTimes} from 'react-icons/fa'
+import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
+import {BsFillPersonLinesFill} from 'react-icons/bs'
+import {HiOutlineMail} from 'react-icons/hi'
+
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
-  
+    
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
         <div>
@@ -23,7 +26,7 @@ const Navbar = () => {
 
         {/* Hamburger */}
         <div onClick={handleClick} className='md:hidden z-10'>
-          <FaBars/>
+          {!nav ? <FaBars/> : <FaTimes/>}
         </div>
 
         {/* Mobile Menu */}
@@ -37,7 +40,33 @@ const Navbar = () => {
       
 
         {/* Social Icons */}
-        <div className='hidden'>
+        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+          <ul>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-gray-900' >
+              <a className='flex justify-between itens-center w-full text-gray-300'
+                 href='https://github.com/DantasBeyer' >
+                 GitHub <FaGithub size={30}/> 
+              </a>
+            </li>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-gray-900' >
+              <a className='flex justify-between itens-center w-full text-gray-300'
+                 href='https://www.linkedin.com/in/jo%C3%A3o-beyer-9b6b4a249/' >
+                 Linkedin <FaLinkedin size={30}/> 
+              </a>
+            </li>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-gray-900' >
+              <a className='flex justify-between itens-center w-full text-gray-300'
+                 href='/' >
+                 Email <HiOutlineMail size={30}/> 
+              </a>
+            </li>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-gray-900' >
+              <a className='flex justify-between itens-center w-full text-gray-300'
+                 href='/' >
+                Resume <BsFillPersonLinesFill size={30}/> 
+              </a>
+            </li>
+          </ul>
         </div>
   
     </div>
