@@ -18,3 +18,18 @@
 .menuMobile{
     @apply py-6 text-4xl
 }
+
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.content-div:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba(22, 38, 71, 0.8),
+        hsla(0, 0%, 9%, 0.8)
+    )!important;
+}
