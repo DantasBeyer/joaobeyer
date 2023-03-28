@@ -1,7 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {HiArrowNarrowRight} from  'react-icons/hi'
+import { Link } from 'react-scroll'
 
 const Home = () => {
+    const [nav, setNav] = useState(false)
+    const handleClick = () => setNav(!nav)
   return (
     <div name='home' className=' w-full h-screen bg-[#0a192f]'>
 
@@ -21,12 +24,14 @@ const Home = () => {
           Currently, I´m focussed on building responsive full-stack web applications.
         </p>
         <div>
-          <button className='text-white  group border-2 px-6 py-3 flex items-center hover:bg-[#0BD0F8]'> 
+        <Link to="about"  smooth={true}  duration={500} >
+          <button  className='text-white  group border-2 px-6 py-3 flex items-center hover:bg-[#0BD0F8]'> 
             View Work 
             <span className=' group-hover:rotate-90 duration-300'>
               <HiArrowNarrowRight className='ml-6'/>
             </span>
           </button>
+        </Link>
         </div>
       </div>
 
