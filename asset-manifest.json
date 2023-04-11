@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portifolio-react/static/css/main.f4a8d09f.css",
+    "main.js": "/portifolio-react/static/js/main.548e5ae4.js",
+    "static/media/realestate.jpg": "/portifolio-react/static/media/realestate.44fd19f4c6872731149c.jpg",
+    "static/media/workImg.jpeg": "/portifolio-react/static/media/workImg.e4c66be6ae2ae4f83608.jpeg",
+    "static/media/react.png": "/portifolio-react/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/node.png": "/portifolio-react/static/media/node.952a9ea986dcfa5229ad.png",
+    "static/media/mongo.png": "/portifolio-react/static/media/mongo.2a1528ddc31d4ce8518d.png",
+    "static/media/pngwing.png": "/portifolio-react/static/media/pngwing.dfdd0989ffe0184bdd68.png",
+    "static/media/html.png": "/portifolio-react/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/tailwind.png": "/portifolio-react/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/portifolio-react/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/javascript.png": "/portifolio-react/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/portifolio-react/index.html",
+    "main.f4a8d09f.css.map": "/portifolio-react/static/css/main.f4a8d09f.css.map",
+    "main.548e5ae4.js.map": "/portifolio-react/static/js/main.548e5ae4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4a8d09f.css",
+    "static/js/main.548e5ae4.js"
+  ]
+}
